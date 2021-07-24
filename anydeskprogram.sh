@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# chmod +x anydeskprogram.sh
 echo "anydesk script started"
 
 sudo tee /etc/yum.repos.d/AnyDesk-Fedora.repo <<EOF
