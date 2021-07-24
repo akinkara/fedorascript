@@ -54,7 +54,7 @@ sleep 20
 
 # brave, discord ve notepadqq kur
 
-snap install brave discord notepadqq 
+snap install brave discord 
 
 
 
