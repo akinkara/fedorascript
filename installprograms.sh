@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# chmod +x installprograms.sh
 echo "script started"
 
 # make updates
