@@ -66,7 +66,7 @@ snap install code --classic && snap install pycharm-professional --classic && sn
 
 #filezilla ve ekstra programları kur
 
-dnf install filezilla gnome-tweaks htop tlp dconf-editor -y
+dnf install filezilla gnome-tweaks htop tlp dconf-editor nodejs postgresql postgresql-server -y
 
 
 
