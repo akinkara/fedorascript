@@ -66,7 +66,7 @@ snap install code --classic && snap install pycharm-professional --classic && sn
 
 # ekstra programları kur
 
-dnf install filezilla gnome-tweaks htop dconf-editor nodejs postgresql postgresql-server -y
+dnf install filezilla gnome-tweaks htop dconf-editor nodejs postgresql postgresql-server power-profiles-daemon -y
 
 postgresql-setup initdb                  # initialize PG cluster
 systemctl start postgresql               # start cluster
