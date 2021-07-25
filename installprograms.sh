@@ -64,10 +64,11 @@ snap install code --classic && snap install pycharm-professional --classic && sn
 
 
 
-#filezilla ve ekstra programları kur
+# ekstra programları kur
 
 dnf install filezilla gnome-tweaks htop tlp dconf-editor nodejs postgresql postgresql-server -y
 
-
+postgresql-setup initdb                  # initialize PG cluster
+systemctl start postgresql               # start cluster
 
 echo "script completed successfully!"
