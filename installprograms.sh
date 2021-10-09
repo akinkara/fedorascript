@@ -24,9 +24,15 @@ dnf copr enable kwizart/fedy -y
 
 dnf install fedy -y
 
+# enable bibata cursor theme copr repo
+sudo dnf -y copr enable peterwu/rendezvous
+
+# enable arc-icon-theme copr repo
+dnf copr -y enable user501254/Arc
+
 
 #ekstra programları kur
-dnf install -y filezilla gnome-tweaks htop dconf-editor nodejs postgresql postgresql-server power-profiles-daemon tlp vim pgadmin4 bibata-cursor-themes fedy neofetch arc-icon-theme vlc
+dnf install -y filezilla gnome-tweaks htop dconf-editor nodejs postgresql postgresql-server power-profiles-daemon tlp vim bibata-cursor-themes fedy neofetch arc-icon-theme vlc
 
 postgresql-setup initdb                  # initialize PG cluster
 systemctl start postgresql               # start cluster
