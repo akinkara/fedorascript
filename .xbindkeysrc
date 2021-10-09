@@ -1,4 +1,5 @@
 ###########################
+# sudo dnf install -y xbindkeys pulseaudio-utils
 # put this file under ~/
 # xbindkeys configuration #
 ###########################
