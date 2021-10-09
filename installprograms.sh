@@ -40,7 +40,7 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
 
 # set window button layout
-gsettings set org.gnome.desktop.wm.preferences button-layout 'close:' 
+gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize:' 
 
 # icon theme
 gsettings set org.gnome.desktop.interface icon-theme 'Arc'
@@ -51,4 +51,15 @@ gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'min
 # workspaces on every display
 gsettings set org.gnome.mutter workspaces-only-on-primary false
 
+
+# alt tab for every page not every program
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Shift><Super>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Shift><Alt>Tab']"
+gsettings set org.gnome.shell.window-switcher current-workspace-only "false"
+
+# snapper notes
+# sudo snapper create --description "snapshot of root to test" # manual snapshot of root
+# sudo snapper -c home create --description "snapshot of home after clean install" # manual snapshot of home
 echo "Completed Successfully!"

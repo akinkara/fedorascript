@@ -1,0 +1,21 @@
+###########################
+# put this file under ~/
+# xbindkeys configuration #
+###########################
+# https://megamorf.gitlab.io/2018/12/16/set-audio-volume-from-command-line/
+# https://www.thecrumb.com/2015/06/03/xbindkeys/index.html 
+# lower volume
+ "pactl -- set-sink-volume 0 -10%"
+  b:6
+# raise volume
+"pactl -- set-sink-volume 0 +10%"
+  b:7
+"gnome-terminal"
+b:9
+""
+b:8
+
+
+##################################
+# End of xbindkeys configuration #
+##################################
