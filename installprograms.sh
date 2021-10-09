@@ -26,7 +26,7 @@ dnf install fedy -y
 
 
 #ekstra programları kur
-dnf install -y filezilla gnome-tweaks htop dconf-editor nodejs postgresql postgresql-server power-profiles-daemon tlp vim pgadmin4 bibata-cursor-themes fedy neofetch arc-icon-theme
+dnf install -y filezilla gnome-tweaks htop dconf-editor nodejs postgresql postgresql-server power-profiles-daemon tlp vim pgadmin4 bibata-cursor-themes fedy neofetch arc-icon-theme vlc
 
 postgresql-setup initdb                  # initialize PG cluster
 systemctl start postgresql               # start cluster
