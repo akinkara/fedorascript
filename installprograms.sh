@@ -70,6 +70,9 @@ gsettings set org.gnome.shell.window-switcher current-workspace-only "false"
 #close the alert sounds
 dconf write /org/gnome/desktop/sound/event-sounds "false"
 
+# fuck the system beep (do it as sudo)
+rmmod pcspkr ; echo "blacklist pcspkr" >>/etc/modprobe.d/blacklist.conf
+
 # snapper notes
 # sudo snapper create --description "snapshot of root to test" # manual snapshot of root
 # sudo snapper -c home create --description "snapshot of home after clean install" # manual snapshot of home
