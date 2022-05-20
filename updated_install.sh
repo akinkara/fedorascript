@@ -60,9 +60,9 @@ rm zoom.rpm
 dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/ms-teams/
 dnf install -y teams
 
-
-tlp start
 systemctl enable tlp.service
+tlp start
+
 
 git config --global user.name "Akin Kara"
 git config --global user.email "akinkara5006@gmail.com"
