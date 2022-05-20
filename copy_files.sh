@@ -3,7 +3,7 @@
 
 read -p "CAUTION this will destroy your current i3 and polybar configs and replace with new ones. Do you wish to continue ?(Y/N): " yn 
     case $yn in
-        [Yy]* ) echo "doint it!"
+        [Yy]* ) echo "doing it!"
                 cp -r ./i3 ~/.config
                 cp -r ./polybar ~/.config
                 chmod +x ~/.config/i3/launch_polybar.sh
