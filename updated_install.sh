@@ -1,32 +1,28 @@
 # this is not finished
-dnf install paketleri
+# 
 
+dnf upgrade --refresh -y
 dnf update -y
 
 # activating rpmfusion repos
-dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-
-dnf install dkms make kernel-devel dnf-plugins-core
-kmod-wl # hp laptop wifi problemini bu driver çözdü
+dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm \
+dkms make kernel-devel dnf-plugins-core \
+#kmod-wl # hp laptop wifi problemini bu driver çözdü
 
 # installing i3 and i3-related packages
 
-dnf install i3 i3status dmenu i3lock xbacklight feh arandr power-profiles-daemon volumeicon lxpolkit picom rofi gnome-terminal polybar nautilus lxappearance lightdm-gtk-greeter-settings gtk-chtheme qt4-qtconfig
+i3 i3status i3lock polybar rofi dmenu xbacklight feh arandr volumeicon lxpolkit picom \
+lxappearance lightdm-gtk-greeter-settings gtk-chtheme qt4-qtconfig \ 
+gnome-terminal nautilus \
+
 
 # general purpose stuff
 
-dnf install neofetch htop tlp neovim vim catfish xkill xinput xprop mpv keepasxc libreoffice hwinfo git
-
-tlp start
-systemctl enable tlp.service
-
-git config --global user.name "Akin Kara"
-git config --global user.email "akinkara5006@gmail.com"
-
+neofetch htop power-profiles-daemon tlp neovim vim catfish xkill xinput xprop mpv keepasxc libreoffice hwinfo git \
 
 # installing python and related packages
-dnf install python3-devel python3 python3.9 python3.8 python3-psycopg2 python3-pip
+python3-devel python3 python3.9 python3.8 python3-psycopg2 python3-pip 
 python3.9 -m ensurepip
 python3.8 -m ensurepip
 
@@ -64,6 +60,13 @@ rm zoom.rpm
 
 dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/ms-teams/
 dnf install -y teams
+
+
+tlp start
+systemctl enable tlp.service
+
+git config --global user.name "Akin Kara"
+git config --global user.email "akinkara5006@gmail.com"
 
 #notlar
 #zoomdaki ekran paylasirken kararma sorununu xcompmgr cozuyomus ama ben picom kullanıyorum ikisi aynı anda calismiyor
