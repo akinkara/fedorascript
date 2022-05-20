@@ -36,7 +36,7 @@ systemctl start docker
 
 dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/                        
 rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc                                  
-dnf install brave-browser
+dnf install -y brave-browser
 
 # installing vscode
 
@@ -46,8 +46,8 @@ dnf install -y code
 
 
 # check if you have ssd 
-echo "if 0 congrats you have ssd!"
-cat /sys/block/sda/queue/rotational
+#echo "if 0 congrats you have ssd!"
+#cat /sys/block/sda/queue/rotational
 # pycharm, datagrip  rpm indirip yukle simdilik
 
 # zoom installation
@@ -60,12 +60,12 @@ rm zoom.rpm
 dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/ms-teams/
 dnf install -y teams
 
-systemctl enable tlp.service
-tlp start
+# systemctl enable tlp.service
+# tlp start
 
 
-git config --global user.name "Akin Kara"
-git config --global user.email "akinkara5006@gmail.com"
+# git config --global user.name "Akin Kara"
+# git config --global user.email "akinkara5006@gmail.com"
 
 #notlar
 #zoomdaki ekran paylasirken kararma sorununu xcompmgr cozuyomus ama ben picom kullanıyorum ikisi aynı anda calismiyor
