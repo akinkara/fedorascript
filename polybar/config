@@ -47,12 +47,15 @@ border-size = 0  ; 4
 border-color = #00000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 1 
 
-module-margin-left = 1
-module-margin-right = 2
+module-margin-left =0 
+#module-margin-left = 1
+module-margin-right = 1 
+#module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
+;font-0 = fixed:pixelsize=10;1
+font-0 = Monospace:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = fontawesome:pixelsize=10;1
 
