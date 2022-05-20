@@ -13,18 +13,18 @@ dkms make kernel-devel dnf-plugins-core \
 # installing i3 and i3-related packages
 
 dnf install -y i3 i3status i3lock polybar rofi dmenu xbacklight feh arandr volumeicon lxpolkit picom \
-lxappearance lightdm-gtk-greeter-settings gtk-chtheme qt4-qtconfig \ 
+lxappearance lightdm-gtk-greeter-settings \
 gnome-terminal nautilus \
 
 
 # general purpose stuff
 
-dnf install -y neofetch htop power-profiles-daemon tlp neovim vim catfish xkill xinput xprop mpv keepasxc libreoffice hwinfo git
+dnf install -y neofetch htop power-profiles-daemon tlp neovim vim catfish xkill xinput xprop mpv keepassxc libreoffice hwinfo git
 
 # installing python and related packages
 dnf install -y python3-devel python3 python3.9 python3.8 python3-psycopg2 python3-pip 
-python3.9 -m ensurepip
-python3.8 -m ensurepip
+#python3.9 -m ensurepip
+#python3.8 -m ensurepip
 
 # installing docker and docker related packages
 dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
@@ -42,7 +42,6 @@ dnf install brave-browser
 
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nena    bled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-check-update
 dnf install -y code
 
 
