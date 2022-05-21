@@ -22,7 +22,7 @@ gnome-terminal nautilus \
 dnf install -y neofetch htop power-profiles-daemon tlp neovim vim catfish xkill xinput xprop mpv keepassxc libreoffice hwinfo git
 
 # installing python and related packages
-dnf install -y python3-devel python3 python3.9 python3.8 python3-psycopg2 python3-pip 
+dnf install -y python3-devel python3 python3.9 python3.8 python3-psycopg2 python3-pip postgresql-devel
 #python3.9 -m ensurepip
 #python3.8 -m ensurepip
 
